@@ -10,12 +10,32 @@ We developed a computer vision AI named FLORIST to efficiently and effectively s
 # FLORIST Workflow
 ![image](https://github.com/user-attachments/assets/dfe5c489-f717-44b3-81f9-cff16164db6c)
 
-# Install
-### Pip install all requirements in a *Python>=3.8* environment with *PyTorch>=1.8*.
-#### Set up a new Conda environment, activate it, and then execute the following command: pip install -r requirements.txt
-#### In order to run the following code (extract feature embeddings from the images in training, testing, and full dataset)
-#### Please install the dinov2 repository from the following [Link](https://drive.google.com/drive/folders/1cGyOZF1NxCIJlz57usWBLr0NuGJXC2Yg?usp=sharing)
-#### The DinoV2 model of *dinov2_vitl14* can be downloaded from the following [Link](https://drive.google.com/file/d/1vZKKuPDfi0XXW3IiV78IT34DeiaeokpG/view?usp=sharing)
+# Installation
+Follow the steps below to set up the environment and run the code in this repository.
+
+## Requirements
+- Python **>= 3.8**
+- PyTorch **>= 1.8**
+- Anaconda (recommended)
+
+## Step 1: Create and activate a Conda environment
+```bash
+conda create -n dinov2_env python=3.8
+conda activate dinov2_env
+
+## Step 2: Install Python dependencies
+Install all required packages using:
+```bash
+pip install -r requirements.txt
+
+## Step 3: Install DINOv2
+To extract feature embeddings from the training, testing, and full datasets, you need to install the DINOv2 repository.
+Download and install the DINOv2 repository from the link below:
+[DinoV2 Repository](https://drive.google.com/drive/folders/1cGyOZF1NxCIJlz57usWBLr0NuGJXC2Yg?usp=sharing)
+
+## Step 4: Download the pretrained DINOv2 model
+Download the pretrained dinov2_vitl14 model from the link below:
+[dinov2_vitl14](https://drive.google.com/file/d/1vZKKuPDfi0XXW3IiV78IT34DeiaeokpG/view?usp=sharing)
 
 # Datasets
 ### Step 1
@@ -28,3 +48,6 @@ The Flower classification datasets can be downloaded from the [*Data Collection.
 # Final inference
 ### Step 3
 [*Inference.py*](https://github.com/Ag-CyPhER/FLORIST/blob/main/Inference.py) code extracts the feature embeddings on the images from Full dataset, loads the trained SVC model to predict labels on the full image dataset. It appends these predictions and saves the updated data to a new Excel file.
+
+### References
+1. [DinoV2 by Meta] (https://github.com/facebookresearch/dinov2/tree/main)
