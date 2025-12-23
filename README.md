@@ -13,6 +13,9 @@ We developed a computer vision AI named FLORIST to efficiently and effectively s
 # Install
 Pip install all requirements in a *Python>=3.8* environment with *PyTorch>=1.8*.
 #### Set up a new Conda environment, activate it, and then execute the following command: pip install -r requirements.txt
+In order to run the following code ()
+Please install the dinov2 repository from the following ![Link](https://drive.google.com/drive/folders/1cGyOZF1NxCIJlz57usWBLr0NuGJXC2Yg?usp=sharing)
+The DinoV2 model of *dinov2_vitl14* can be downloaded from the following ![link](https://drive.google.com/file/d/1vZKKuPDfi0XXW3IiV78IT34DeiaeokpG/view?usp=sharing)
 
 # Datasets
 ### Step 1
@@ -20,8 +23,8 @@ The Flower classification datasets can be downloaded from the [*Data Collection.
 
 # Train Test
 ### Step 2
-[*Train Test.py*](https://github.com/Puranjit/FLORIST/blob/main/Train%20Test.py) code extracts feature embeddings from training and testing image datasets using the DINOv2 model (Version: dinov2_vitl14), trains a Support Vector Classifier (SVC) on 320 labeled training images, and evaluates the model's performance on 1000 independent labeled test images. It outputs evaluation metric scores to assess classification accuracy between "Flower" and "Non-Flower" labels.
+[*Train Test.py*](https://github.com/Puranjit/FLORIST/blob/main/Train%20Test.py) code extracts feature embeddings from training and testing image datasets using the DINOv2 model (Version: dinov2_vitl14), trains a Support Vector Classifier (SVC) on 320 labeled training images, and evaluates the model's performance on 1000 independent labeled test images. It outputs evaluation metric scores to assess classification accuracy between "Flower" and "Non-Flower" labels as presented in the manuscript.
 
 # Final inference
 ### Step 3
-[*Inference.py*](https://github.com/Puranjit/FLORIST/blob/main/Inference.py) code loads feature embeddings and a trained SVC model to predict labels for a full image dataset. It appends these predictions and saves the updated data to a new Excel file.
+[*Inference.py*](https://github.com/Puranjit/FLORIST/blob/main/Inference.py) code extracts the feature embeddings on the images from Full dataset, loads the trained SVC model to predict labels on the full image dataset. It appends these predictions and saves the updated data to a new Excel file.
