@@ -33,7 +33,7 @@ To extract feature embeddings from the training, testing, and full datasets, you
 Download and install the DINOv2 repository from the link below:
 [*DinoV2 Repository*](https://drive.google.com/drive/folders/1cGyOZF1NxCIJlz57usWBLr0NuGJXC2Yg?usp=sharing)
 
-## Step 4: Download the pretrained DINOv2 model
+#### Step 4: Download the pretrained DINOv2 model
 Download the pretrained dinov2_vitl14 model from the link below:
 [*dinov2_vitl14*](https://drive.google.com/file/d/1vZKKuPDfi0XXW3IiV78IT34DeiaeokpG/view?usp=sharing)
 
