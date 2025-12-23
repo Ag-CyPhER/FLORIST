@@ -31,11 +31,11 @@ pip install -r requirements.txt
 ## Step 3: Install DINOv2
 To extract feature embeddings from the training, testing, and full datasets, you need to install the DINOv2 repository.
 Download and install the DINOv2 repository from the link below:
-[DinoV2 Repository](https://drive.google.com/drive/folders/1cGyOZF1NxCIJlz57usWBLr0NuGJXC2Yg?usp=sharing)
+[*DinoV2 Repository*](https://drive.google.com/drive/folders/1cGyOZF1NxCIJlz57usWBLr0NuGJXC2Yg?usp=sharing)
 
 ## Step 4: Download the pretrained DINOv2 model
 Download the pretrained dinov2_vitl14 model from the link below:
-[dinov2_vitl14](https://drive.google.com/file/d/1vZKKuPDfi0XXW3IiV78IT34DeiaeokpG/view?usp=sharing)
+[*dinov2_vitl14*](https://drive.google.com/file/d/1vZKKuPDfi0XXW3IiV78IT34DeiaeokpG/view?usp=sharing)
 
 # Datasets
 ### Step 1
@@ -50,4 +50,4 @@ The Flower classification datasets can be downloaded from the [*Data Collection.
 [*Inference.py*](https://github.com/Ag-CyPhER/FLORIST/blob/main/Inference.py) code extracts the feature embeddings on the images from Full dataset, loads the trained SVC model to predict labels on the full image dataset. It appends these predictions and saves the updated data to a new Excel file.
 
 ### References
-1. [DinoV2 by Meta] (https://github.com/facebookresearch/dinov2/tree/main)
+1. [DinoV2 by Meta](https://github.com/facebookresearch/dinov2/tree/main)
