@@ -33,19 +33,19 @@ To extract feature embeddings from the training, testing, and full datasets, you
 Download and install the DINOv2 repository from the link below:
 [*DinoV2 Repository*](https://drive.google.com/drive/folders/1cGyOZF1NxCIJlz57usWBLr0NuGJXC2Yg?usp=sharing)
 
-#### Step 4: Download the pretrained DINOv2 model
+### Step 4: Download the pretrained DINOv2 model
 Download the pretrained dinov2_vitl14 model from the link below:
 [*dinov2_vitl14*](https://drive.google.com/file/d/1vZKKuPDfi0XXW3IiV78IT34DeiaeokpG/view?usp=sharing)
 
-# Flower Classification 
+# FLORIST Code
 ### Step 1
 The Flower classification datasets can be downloaded from the [*Data Collection.py*](https://github.com/Ag-CyPhER/FLORIST/blob/main/Data%20Collection.py) script that reads the Flower classification dataset.xlsx file.
 
-# Train Test
+## Train Test
 ### Step 2
 [*Train Test.py*](https://github.com/Ag-CyPhER/FLORIST/blob/main/Train%20Test.py) code extracts feature embeddings from training and testing image datasets using the DINOv2 model (Version: dinov2_vitl14), trains a Support Vector Classifier (SVC) on 320 labeled training images, and evaluates the model's performance on 1000 independent labeled test images. It outputs evaluation metric scores to assess classification accuracy between "Flower" and "Non-Flower" labels as presented in the manuscript.
 
-# Final inference
+## Final inference
 ### Step 3
 [*Inference.py*](https://github.com/Ag-CyPhER/FLORIST/blob/main/Inference.py) code extracts the feature embeddings on the images from Full dataset, loads the trained SVC model to predict labels on the full image dataset. It appends these predictions and saves the updated data to a new Excel file.
 
