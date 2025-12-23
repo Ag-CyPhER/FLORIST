@@ -27,7 +27,7 @@ conda activate dinov2_env
 Install all required packages using:
 ```bash
 pip install -r requirements.txt
-
+```
 ## Step 3: Install DINOv2
 To extract feature embeddings from the training, testing, and full datasets, you need to install the DINOv2 repository.
 Download and install the DINOv2 repository from the link below:
