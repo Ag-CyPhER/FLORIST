@@ -19,12 +19,12 @@ We developed a computer vision AI named FLORIST to efficiently and effectively s
 
 # Datasets
 ### Step 1
-The Flower classification datasets can be downloaded from the [*Data Collection.py*](https://github.com/Puranjit/FLORIST/blob/main/Data%20Collection.py) script that reads the Flower classification dataset.xlsx file.
+The Flower classification datasets can be downloaded from the [*Data Collection.py*](https://github.com/Ag-CyPhER/FLORIST/blob/main/Data%20Collection.py) script that reads the Flower classification dataset.xlsx file.
 
 # Train Test
 ### Step 2
-[*Train Test.py*](https://github.com/Puranjit/FLORIST/blob/main/Train%20Test.py) code extracts feature embeddings from training and testing image datasets using the DINOv2 model (Version: dinov2_vitl14), trains a Support Vector Classifier (SVC) on 320 labeled training images, and evaluates the model's performance on 1000 independent labeled test images. It outputs evaluation metric scores to assess classification accuracy between "Flower" and "Non-Flower" labels as presented in the manuscript.
+[*Train Test.py*](https://github.com/Ag-CyPhER/FLORIST/blob/main/Train%20Test.py) code extracts feature embeddings from training and testing image datasets using the DINOv2 model (Version: dinov2_vitl14), trains a Support Vector Classifier (SVC) on 320 labeled training images, and evaluates the model's performance on 1000 independent labeled test images. It outputs evaluation metric scores to assess classification accuracy between "Flower" and "Non-Flower" labels as presented in the manuscript.
 
 # Final inference
 ### Step 3
-[*Inference.py*](https://github.com/Puranjit/FLORIST/blob/main/Inference.py) code extracts the feature embeddings on the images from Full dataset, loads the trained SVC model to predict labels on the full image dataset. It appends these predictions and saves the updated data to a new Excel file.
+[*Inference.py*](https://github.com/Ag-CyPhER/FLORIST/blob/main/Inference.py) code extracts the feature embeddings on the images from Full dataset, loads the trained SVC model to predict labels on the full image dataset. It appends these predictions and saves the updated data to a new Excel file.
