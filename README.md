@@ -18,17 +18,17 @@ Follow the steps below to set up the environment and run the code in this reposi
 - PyTorch **>= 1.8**
 - Anaconda (recommended)
 
-## Step 1: Create and activate a Conda environment
+### Step 1: Create and activate a Conda environment
 ```bash
 conda create -n dinov2_env python=3.8
 conda activate dinov2_env
 ```
-## Step 2: Install Python dependencies
+### Step 2: Install Python dependencies
 Install all required packages using:
 ```bash
 pip install -r requirements.txt
 ```
-## Step 3: Install DINOv2
+### Step 3: Install DINOv2
 To extract feature embeddings from the training, testing, and full datasets, you need to install the DINOv2 repository.
 Download and install the DINOv2 repository from the link below:
 [*DinoV2 Repository*](https://drive.google.com/drive/folders/1cGyOZF1NxCIJlz57usWBLr0NuGJXC2Yg?usp=sharing)
@@ -37,7 +37,7 @@ Download and install the DINOv2 repository from the link below:
 Download the pretrained dinov2_vitl14 model from the link below:
 [*dinov2_vitl14*](https://drive.google.com/file/d/1vZKKuPDfi0XXW3IiV78IT34DeiaeokpG/view?usp=sharing)
 
-# Flower Classifiaction 
+# Flower Classification 
 ### Step 1
 The Flower classification datasets can be downloaded from the [*Data Collection.py*](https://github.com/Ag-CyPhER/FLORIST/blob/main/Data%20Collection.py) script that reads the Flower classification dataset.xlsx file.
 
