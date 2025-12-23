@@ -22,7 +22,7 @@ Follow the steps below to set up the environment and run the code in this reposi
 ```bash
 conda create -n dinov2_env python=3.8
 conda activate dinov2_env
-
+```
 ## Step 2: Install Python dependencies
 Install all required packages using:
 ```bash
