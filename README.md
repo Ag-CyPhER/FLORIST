@@ -38,6 +38,7 @@ Download the pretrained dinov2_vitl14 model from the link below:
 [*dinov2_vitl14*](https://drive.google.com/file/d/1vZKKuPDfi0XXW3IiV78IT34DeiaeokpG/view?usp=sharing)
 
 # FLORIST Code
+## Data Collection
 ### Step 1
 The Flower classification datasets can be downloaded from the [*Data Collection.py*](https://github.com/Ag-CyPhER/FLORIST/blob/main/Data%20Collection.py) script that reads the Flower classification dataset.xlsx file.
 
