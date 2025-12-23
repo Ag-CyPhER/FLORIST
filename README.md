@@ -10,7 +10,7 @@ We developed a computer vision AI named FLORIST to efficiently and effectively s
 # FLORIST Workflow
 ![image](https://github.com/user-attachments/assets/dfe5c489-f717-44b3-81f9-cff16164db6c)
 
-# Installation
+# DinoV2 Installation
 Follow the steps below to set up the environment and run the code in this repository.
 
 ## Requirements
@@ -37,7 +37,7 @@ Download and install the DINOv2 repository from the link below:
 Download the pretrained dinov2_vitl14 model from the link below:
 [*dinov2_vitl14*](https://drive.google.com/file/d/1vZKKuPDfi0XXW3IiV78IT34DeiaeokpG/view?usp=sharing)
 
-# Datasets
+# Flower Classifiaction 
 ### Step 1
 The Flower classification datasets can be downloaded from the [*Data Collection.py*](https://github.com/Ag-CyPhER/FLORIST/blob/main/Data%20Collection.py) script that reads the Flower classification dataset.xlsx file.
 
@@ -50,4 +50,4 @@ The Flower classification datasets can be downloaded from the [*Data Collection.
 [*Inference.py*](https://github.com/Ag-CyPhER/FLORIST/blob/main/Inference.py) code extracts the feature embeddings on the images from Full dataset, loads the trained SVC model to predict labels on the full image dataset. It appends these predictions and saves the updated data to a new Excel file.
 
 ### References
-1. [DinoV2 by Meta](https://github.com/facebookresearch/dinov2/tree/main)
+This work uses the DINOv2 framework from Facebook Research: (https://github.com/facebookresearch/dinov2/tree/main)
