@@ -24,7 +24,7 @@ cwd = os.getcwd()
 
 # Defining path to the images included in the Full dataset
 # Flower and Non flower each for each species
-ROOT_DIR = os.path.join(cwd, "Embed check/Full")
+ROOT_DIR = os.path.join(cwd, "Full")
 
 labels = {}
 

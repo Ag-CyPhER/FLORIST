@@ -24,7 +24,7 @@ cwd = os.getcwd()
 
 # Defining path to the images included in the training dataset - this includes 40 images for
 # Flower and Non flower each for each species
-ROOT_DIR = os.path.join(cwd, "Embed check/Training")
+ROOT_DIR = os.path.join(cwd, "Training")
 
 labels = {}
 
@@ -99,14 +99,14 @@ y = [labels[file] for file in files]
 embedding_list = list(embeddings.values())
 
 # Saving feature embeddings of all the images in flower classification dataset
-np.save('Embed check/feature_embeddings.npy', embedding_list)
+np.save('feature_embeddings.npy', embedding_list)
 
 train_emb = np.array(embedding_list).reshape(-1, 1024) # dinov2_vitl14
 # train_emb = np.array(embedding_list).reshape(-1, 768) # dinov2_vitb14
 
 # Storing training embeddings in an excel file 
 df = pd.DataFrame(train_emb)
-df.to_excel('Embed check/Training.xlsx')
+df.to_excel('Training.xlsx')
 
 
 
@@ -121,7 +121,7 @@ test_labels = {}  # Dictionary to hold test file paths and their labels
 
 # Testing dataset includes 1000 images randomly selected from the entire flower classification dataset 
 # excluding the ones included in the training dataset (Independent dataset)
-TEST_DIR = os.path.join(cwd, "Embed check/Testing")
+TEST_DIR = os.path.join(cwd, "Testing")
 
 # Reading images from Testing dataset
 for folder in os.listdir(TEST_DIR):
@@ -157,7 +157,7 @@ testing_labels = np.array(testing_labels)
 # Saving testing dataset labels in an excel sheet
 import pandas as pd, openpyxl
 df = pd.DataFrame(testing_labels)
-df.to_excel('Embed check/Testing_labels.xlsx')
+df.to_excel('Testing_labels.xlsx')
 
 # Convert embeddings to NumPy array
 test_embeddings = np.array(test_embeddings)
@@ -165,7 +165,7 @@ test_embeddings = np.array(test_embeddings)
 # Saving testing dataset embeddings in an excel sheet
 import pandas as pd, openpyxl
 df = pd.DataFrame(test_embeddings)
-df.to_excel('Embed check/Test_embeddings.xlsx')
+df.to_excel('Test_embeddings.xlsx')
 
 # It was observed that the SVC model performed best and achieved highest evaluatio metric scores of Precision, Recall, and F1-score
 # The evaluation metric scores reported in the Manuscript were generated using the trained SVC model performance on testing dataset
@@ -180,7 +180,7 @@ clf = svm.SVC(gamma='scale', class_weight='balanced')
 clf.fit(train_emb, y)
 
 # Saving the trained ML model
-dump(clf, 'Embed check/svc_model.joblib')
+dump(clf, 'svc_model.joblib')
 
 # Predict using the trained model
 test_predictions = clf.predict(test_embeddings)
